@@ -1,6 +1,5 @@
 from flask import Flask, request, send_file
 from rembg import remove
-import easygui
 from PIL import Image
 import io
 
