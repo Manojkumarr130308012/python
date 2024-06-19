@@ -3,3 +3,4 @@ gunicorn>=20.1.0,<21.0
 rembg>=2.0.0,<3.0
 Pillow>=8.0.0,<10.0.0
 numpy<2.0.0
+onnxruntime>=1.10.0,<2.0.0
