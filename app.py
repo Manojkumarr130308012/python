@@ -12,6 +12,9 @@ import io
 # output.save(outputPath)
 app = Flask(__name__)
 
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
 
 @app.route('/remove-background', methods=['POST'])
 def remove_background():
