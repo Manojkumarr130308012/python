@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, send_file
 from rembg import remove
 from PIL import Image
@@ -35,6 +36,6 @@ def remove_background():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
 
 
